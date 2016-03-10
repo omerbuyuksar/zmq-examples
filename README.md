@@ -11,7 +11,7 @@
 
 ## ZMQ lib installing for binding
 
----------libsodium installing------------------
+## libsodium installing
 
 wget https://download.libsodium.org/libsodium/releases/libsodium-1.0.3.tar.gz
 tar -xvf libsodium-1.0.3.tar.gz
@@ -21,7 +21,7 @@ make && make check
 sudo make install
 
 
----zeromq installing-----------------
+## zeromq installing
 
 wget http://download.zeromq.org/zeromq-4.1.3.tar.gz
 tar -xvf zeromq-4.1.3.tar.gz 
@@ -32,7 +32,7 @@ sudo ldconfig
 
 ## libzmq for c binding
 
----czmq installing-----------------
+## czmq installing
 
 wget https://github.com/zeromq/czmq/archive/v3.0.2.tar.gz
 mv v3.0.2.tar.gz czmq-3.0.2.tar.gz
