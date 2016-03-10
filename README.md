@@ -1,7 +1,6 @@
-# zmq-com.examples
+# ZMQ Installing and Examples
 
-
-# ZMQ Java Maven repository
+## ZMQ Java Maven repository
 
 <dependency>
 	<groupId>org.zeromq</groupId>
@@ -10,10 +9,9 @@
 </dependency>
 
 
-# lib zmq installing for binding
+## ZMQ lib installing for binding
 
 ---------libsodium installing------------------
-
 
 wget https://download.libsodium.org/libsodium/releases/libsodium-1.0.3.tar.gz
 tar -xvf libsodium-1.0.3.tar.gz
@@ -32,7 +30,7 @@ cd zeromq-4.1.3/
 sudo make install
 sudo ldconfig
 
-# libzmq for c binding
+## libzmq for c binding
 
 ---czmq installing-----------------
 
