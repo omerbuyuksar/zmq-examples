@@ -16,10 +16,10 @@ public class Publisher {
         System.out.println("Pub socket started");
         while(true){
             pub.sendMore("EURUSD");
-            pub.send(" ucuz");
+            pub.send("   UCUZ");
             pub.sendMore("GBPUSD");
-            pub.send(" pahalı");
-            Thread.sleep(100);
+            pub.send("   PAHALI");
+            Thread.sleep(200);
             System.out.println("Published:" +(new Date()).toString());
         }
     }

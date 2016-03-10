@@ -20,8 +20,8 @@ public class Subscriber {
         System.out.println("Pub socket started");
 
         while (true) {
-            System.out.println(new Date().toString()+"Topic: "+sub.recvStr());
-            System.out.println(new Date().toString()+"Msg: "+sub.recvStr());
+            System.out.println(new Date().toString()+" Topic: "+sub.recvStr());
+            System.out.println(new Date().toString()+" Msg: "+sub.recvStr());
             Thread.sleep(100);
         }
     }

@@ -17,7 +17,6 @@ public class Request {
         if (args.length > 0) {
             waitTime = Integer.parseInt(args[0]);
         }
-        System.out.println("Wait time="+waitTime);
         while (true) {
 
             System.out.println("Requested");
