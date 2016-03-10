@@ -2,11 +2,13 @@
 
 ## ZMQ Java Maven repository
 
+```xml
 <dependency>  
 	<groupId>org.zeromq</groupId>  
 	<artifactId>jeromq</artifactId>  
 	<version>0.3.4</version>  
 </dependency>  
+```
 
 
 ## ZMQ lib installing for binding
