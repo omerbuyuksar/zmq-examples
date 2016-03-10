@@ -1,6 +1,6 @@
 # ZMQ Installing and Examples
 
-## ZMQ Java Maven repository
+## ZMQ Native Java Maven repository
 
 ```xml
 <dependency>  
