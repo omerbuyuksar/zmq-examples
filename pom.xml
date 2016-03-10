@@ -11,7 +11,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.jeromq</groupId>
+            <groupId>org.zeromq</groupId>
             <artifactId>jeromq</artifactId>
             <version>0.3.4</version>
         </dependency>
@@ -42,13 +42,13 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.destek.zeromq.performance.PerformanceTestMain</mainClass>
+                            <!--<mainClass>com.destek.zeromq.performance.PerformanceTestMain</mainClass>-->
                             <classpathPrefix>${project.build.directory}/dependency/</classpathPrefix>
                         </manifest>
                     </archive>
-                    <manifestEntries>
-                        <Class-Path>${project.build.directory}/dependency/</Class-Path>
-                    </manifestEntries>
+                    <!--<manifestEntries>-->
+                        <!--<Class-Path>${project.build.directory}/dependency/</Class-Path>-->
+                    <!--</manifestEntries>-->
                 </configuration>
             </plugin>
 
