@@ -17,7 +17,7 @@ public class Subscriber {
         else
             sub.subscribe("".getBytes());
         sub.connect("tcp://localhost:5560");
-        System.out.println("Pub socket started");
+        System.out.println("Sub socket started");
 
         while (true) {
             System.out.println(new Date().toString()+" Topic: "+sub.recvStr());

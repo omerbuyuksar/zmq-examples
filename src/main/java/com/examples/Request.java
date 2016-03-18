@@ -9,7 +9,7 @@ import java.util.Date;
  */
 public class Request {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         long waitTime = 0;
         ZMQ.Context ctx = ZMQ.context(1);
         ZMQ.Socket req = ctx.socket(ZMQ.REQ);
@@ -20,21 +20,16 @@ public class Request {
         while (true) {
 
             System.out.println("Requested");
-            req.send("Request"+ ((waitTime==0) ? " Only one request": ""));
+            req.send("Request" + ((waitTime == 0) ? " Only one request" : ""));
 
-            System.out.println((new Date()).toString()+"Recieved: "+req.recvStr());
+            System.out.println((new Date()).toString() + "Recieved: " + req.recvStr());
             if (waitTime == 0)
                 break;
-            try {
-                Thread.sleep(waitTime);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            Thread.sleep(waitTime);
 
         }
         req.close();
         ctx.close();
-//        ctx.term();
         System.exit(0);
     }
 }
